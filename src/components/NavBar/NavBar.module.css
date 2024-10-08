@@ -1,6 +1,7 @@
+/* Estilos para la hamburguesa */
 .hamburger {
-    width: 40px;
-    height: 12px;
+    width: 30px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,6 +16,7 @@
     background-color: black;
 }
 
+/* Menú desplegable */
 .hamburgerButton {
     border: none;
     background: none;
@@ -54,4 +56,53 @@
 
 .menuList li a:hover {
     background-color: #f0f0f0;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburgerButton {
+        display: block;
+    }
+
+    .iconContainer a {
+        margin: 0 5px;
+    }
+
+    .iconContainer a svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .text-center span {
+        font-size: 1.2rem;
+    }
+
+    .iconContainer {
+        flex-wrap: wrap;
+    }
+
+    .dropdownMenu {
+        top: 50px;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .iconContainer a svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .text-center span {
+        font-size: 1rem;
+    }
+
+    .iconContainer {
+        justify-content: center;
+        width: 100%;
+    }
 }
