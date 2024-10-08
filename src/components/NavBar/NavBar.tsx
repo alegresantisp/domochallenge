@@ -6,7 +6,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { TiSocialLinkedin } from 'react-icons/ti';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './NavBar.module.css'; 
-import icono from '../../assets/icono.ico'; 
+import icono from '../../assets/icono.png'; 
 import Image from 'next/image'; 
 
 const NavBar = () => {
